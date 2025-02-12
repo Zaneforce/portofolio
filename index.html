@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Justin Valentino's Portfolio - Web Developer & UI/UX Designer">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/608ec77317.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Justin Valentino.</a>
+            <ul>
+                <li class="active"><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#projects" data-section="project">Projects</a></li>
+                <li><a href="#skills" data-section="home">Skills</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle"><i class='bx bx-menu'></i></div>
+        </nav>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" id="close-btn">×</span>
+        <div class="profile-img">
+            <img src="./Assets/profile.png" alt="profile">
+            <h4>Justin Valentino</h4>
+            <p>Frontend Developer</p>
+        </div>
+        <ul>
+            <li class="active"><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#projects" data-section="project">Projects</a></li>
+                <li><a href="#skills" data-section="home">Skills</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-info">
+            <h1>Justin Valentino</h1>
+            <h3>Hello, I'm a
+                <span style="--i:4;" data-text="Web Developer">Web Developer</span>
+                <span style="--i:3;" data-text="Frontend Developer">Frontend Developer</span>
+                <span style="--i:2;" data-text="UI/UX Designer">UI/UX Designer</span>
+                <span style="--i:1;" data-text="Student">Student</span>
+            </h3>
+            <p>
+                I am a fourth-semester Computer Science student specializing in Software Engineering at Binus University
+                with a strong desire to learn and excel in the field of technology and innovation. I am highly adaptable
+                and possess a solid foundation in programming, problem-solving, and teamwork. My passion for technology
+                drives me to continuously seek new knowledge and opportunities to grow and improve.
+            </p>
+            <div class="btn-social">
+                <a href="#" class="btn">Contact Me</a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="./Assets/profile.png" alt="profile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Frontend Developer & UI/UX Designer</h3>
+                    <p>A passionate developer with experience in building responsive websites and web applications.
+                        Currently pursuing my degree while working on various projects to enhance my skills.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class='bx bx-code-alt'></i>
+                            <span>1+ Years Experience</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class='bx bx-check-shield'></i>
+                            <span>15+ Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-tech">
+                    <h4>Technologies I Use:</h4>
+                    <div class="tech-stack">
+                        <div class="tech-item"><i class='bx bxl-html5'></i>HTML5</div>
+                        <div class="tech-item"><i class='bx bxl-css3'></i>CSS3</div>
+                        <div class="tech-item"><i class='bx bxl-javascript'></i>JavaScript</div>
+                        <div class="tech-item"><i class="fa-brands fa-figma"></i>Figma</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./Assets/project1.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3>BiCamp - Student Collaboration Platform</h3>
+                        <p>BiCamp is a platform designed for students, featuring chat with voice integration, collaborative whiteboard and notes, a task tracker, and discussion forums.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Zaneforce/Software-Engineering-Bicamp"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./Assets/project3.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Facial Expression Recognition App</h3>
+                        <p>A Flask-based application that detects facial expressions using deep learning models.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Zaneforce/Classmood-Final"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./Assets/project2.png" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Animated Birthday Celebration Web</h3>
+                        <p>A Website with fireworks animations, balloons, and candle blowing features.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Zaneforce/birthday-project"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class='bx bxl-html5'></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress html">100%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class='bx bxl-css3'></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress css">90%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class='bx bxl-javascript'></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress js">85%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-c"></i>
+                        <span>C Programming</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress c">100%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class='bx bx-envelope'></i>
+                        <span>Jastinvalentino14@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class='bx bx-phone'></i>
+                        <span>085523534595</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+                <form action="" method="get" target="_blank" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <input type="hidden" name="phone" value="6285523534595">
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 Justin Valentino. All rights reserved</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
