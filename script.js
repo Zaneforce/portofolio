@@ -135,7 +135,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 
     let phoneNumber = "6285523534595"; 
 
-    let whatsappUrl = `https://wa.me/${phoneNumber}?text=Nama:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0APesan:%20${encodeURIComponent(message)}`;
+    let whatsappUrl = `https://wa.me/${phoneNumber}?text=Nama:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0APesan:%20${encodeURIComponent(message)}`, "_blank;
 
     window.location.href = whatsappUrl;
 });
