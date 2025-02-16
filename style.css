@@ -91,8 +91,6 @@ a{
     border-bottom: 2px solid #fff;
 }
 
-
-
 .sidebar{
     position: fixed;
     top: 0;
@@ -175,7 +173,7 @@ a{
     height: 80px;
     border-radius: 50%;
     border: 2px solid var(--text-clr);
-}   
+}  
 
 .home{
     margin-top: 20px;
@@ -344,6 +342,7 @@ a{
     mix-blend-mode: lighten;
 }
 
+/* About Section */
 .about {
     padding: 100px 10%;
     background: var(--hover-clr);
@@ -409,6 +408,7 @@ a{
     box-shadow: 0 0 10px var(--accent-clr);
 }
 
+/* Projects Section */
 .projects {
     padding: 100px 10%;
 }
@@ -456,6 +456,8 @@ a{
 .project-links a:hover {
     color: var(--accent-clr);
 }
+
+/* Skills Section */
 .skills {
     padding: 100px 10%;
     background: var(--hover-clr);
@@ -503,6 +505,7 @@ a{
     font-size: 0.8rem;
 }
 
+/* Contact Section */
 .contact {
     padding: 100px 10%;
 }
@@ -580,11 +583,9 @@ a{
     .navbar ul{
         display: none;
     }
-    
     .navbar .menu-toggle {
         display: block;
     }
-    
     .sidebar {
         display: block;
     }
