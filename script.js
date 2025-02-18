@@ -28,30 +28,34 @@ document.querySelectorAll('.sidebar ul li a').forEach(anchor => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+function setActiveLink() {
     const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.navbar a, .sidebar a, .footer a');
+    const navLinks = document.querySelectorAll('.navbar ul li a, .sidebar ul li a');
 
-    function updateActiveNav() {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.scrollY >= sectionTop - sectionHeight / 3) {
-                current = section.getAttribute('id');
-            }
-        });
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - 300 && window.scrollY < sectionTop + sectionHeight - 300) {
+            const id = section.getAttribute('id');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(id)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}
 
-        navLinks.forEach(link => {
+window.addEventListener('scroll', setActiveLink);
+document.addEventListener('DOMContentLoaded', setActiveLink);
+document.querySelectorAll('.navbar ul li a, .sidebar ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        document.querySelectorAll('.navbar ul li a, .sidebar ul li a').forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
         });
-    }
-
-    window.addEventListener('scroll', updateActiveNav);
-    window.addEventListener('load', updateActiveNav);
+        this.classList.add('active');
+    });
 });
 
 ScrollReveal().reveal('.section-title, .project-card, .skill-item', {
@@ -139,3 +143,4 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 
     window.location.href = whatsappUrl;
 });
+
